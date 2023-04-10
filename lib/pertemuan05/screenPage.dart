@@ -64,6 +64,12 @@ class _Pertemuan05ScreenState extends State<Pertemuan05Screen> {
                     }),
                 Text('Random Access Memory'),
               ]),
+                if (soal1a == false && soal1b == false)
+                  Container()
+                else if (soal1a == true && soal1b == true)
+                  Text('Jawaban sudah benar', style: TextStyle(color: Colors.red))
+                else
+                  Text('Jawaban masih salah, coba lagi', style: TextStyle(color: Colors.red)),
               const Text('2. Skema desain pembangunan jaringan disebut.....'),
               Row(
                 children: [
